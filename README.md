@@ -54,4 +54,5 @@ public class MyTransformation implements ViewPager.PageTransformer {
     }
 
 ```
-代码中有注释，如果想看更详细的介绍贴出我博客的链接：[我的博客](https://blog.csdn.net/qq_25749749/article/details/82777226 "悬停显示")  
+代码中有注释，如果想看更详细的介绍，在此贴出我博客的链接：[我的博客](https://blog.csdn.net/qq_25749749/article/details/82777226 "悬停显示") 
+如果您觉得不错的话对你有帮助就点个赞收藏一下，谢谢！
