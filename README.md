@@ -1,7 +1,6 @@
 # CdlGalleryViewpager
 #Android 使用ViewPager打造3D画廊效果。
-##主要实现思路是
-###设置PageTransformer
+##主要实现思路是设置PageTransformer
 
 PageTransformer是ViewPager的一个公共成员接口，用于设置当一个页面滑入和滑出的过度特效，当然，由于是通过属性动画来设置的，所以设置的pagetransformer在Android3.0以下会被忽略。
 
