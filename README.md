@@ -1,13 +1,12 @@
 # CdlGalleryViewpager
 ## Android 使用ViewPager打造3D画廊效果
+![](https://github.com/Cdlpj/CdlGalleryViewpager/raw/master/suxi.jpg)  
 ### 主要实现思路是设置PageTransformer
-![](https://github.com/pj814/CdlGalleryViewpager/raw/master/mipmap-xhdpi/suxi.jpg)  
-
 PageTransformer是ViewPager的一个公共成员接口，用于设置当一个页面滑入和滑出的过度特效，当然，由于是通过属性动画来设置的，所以设置的pagetransformer在Android3.0以下会被忽略。
 
 关于实现该接口，只需要实现一个方法即可：
 ```
-　　public void transformPage(View page, float position);
+public void transformPage(View page, float position);
 ```
 
 对于参数position，需要好好说明一下：
@@ -16,7 +15,7 @@ position的取值有如下说明：
 
 position是指的是页面相对于中间页面的位置参数，根据位置不同，0的时候在中间最前面，1的时候页面完全在右边，-1的时候页面完全在左边。如下图所示：
 
-![](https://github.com/pj814/CdlGalleryViewpager/raw/master/mipmap-xhdpi/introduce.png)  
+![](https://github.com/Cdlpj/CdlGalleryViewpager/raw/master/introduce.png)  
 
 关于该接口的更多知识可以看鸿洋大大的这篇博客：http://blog.csdn.net/lmj623565791/article/details/40411921/
 代码如下：
@@ -55,3 +54,4 @@ public class MyTransformation implements ViewPager.PageTransformer {
     }
 
 ```
+代码中有注释，如果想看更详细的介绍贴出我博客的链接：[我的博客](https://blog.csdn.net/qq_25749749/article/details/82777226 "悬停显示")  
