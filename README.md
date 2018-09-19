@@ -18,3 +18,39 @@ position是指的是页面相对于中间页面的位置参数，根据位置不
  
 
 关于该接口的更多知识可以看鸿洋大大的这篇博客：http://blog.csdn.net/lmj623565791/article/details/40411921/
+代码如下：
+```
+/**
+ * @author:程龙 date; On 2018/9/19
+ */
+public class MyTransformation implements ViewPager.PageTransformer {
+
+    private static final float MIN_SCALE = 0.85f;
+    private static final float MIN_ALPHA = 0.5f;
+    private static final float MAX_ROTATE = 30;
+    private Camera camera = new Camera();
+
+    @Override
+    public void transformPage(View page, float position) {
+        float centerX = page.getWidth() / 2;
+        float centerY = page.getHeight() / 2;
+        float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
+        float rotate = 20 * Math.abs(position);
+        if (position < -1) {
+
+        } else if (position < 0) {
+            page.setScaleX(scaleFactor);
+            page.setScaleY(scaleFactor);
+            page.setRotationY(rotate);
+        } else if (position >= 0 && position < 1) {
+            page.setScaleX(scaleFactor);
+            page.setScaleY(scaleFactor);
+            page.setRotationY(-rotate);
+        } else if (position >= 1) {
+            page.setScaleX(scaleFactor);
+            page.setScaleY(scaleFactor);
+            page.setRotationY(-rotate);
+        }
+    }
+
+```
