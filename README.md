@@ -16,7 +16,7 @@ position的取值有如下说明：
 
 position是指的是页面相对于中间页面的位置参数，根据位置不同，0的时候在中间最前面，1的时候页面完全在右边，-1的时候页面完全在左边。如下图所示：
 
-![](https://github.com/Cdlpj/CdlGalleryViewpager/raw/master/mipmap-xhdpi/introduce.png)  
+![](https://github.com/Cdlpj/CdlGalleryViewpager/raw/introduce.png)  
 
 关于该接口的更多知识可以看鸿洋大大的这篇博客：http://blog.csdn.net/lmj623565791/article/details/40411921/
 代码如下：
