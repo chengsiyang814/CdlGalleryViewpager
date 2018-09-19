@@ -7,7 +7,6 @@ import android.view.View;
 /**
  * @author:程龙 date; On 2018/9/19
  */
-
 public class MyTransformation implements ViewPager.PageTransformer {
 
     private static final float MIN_SCALE = 0.85f;
